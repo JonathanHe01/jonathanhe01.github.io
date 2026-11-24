@@ -261,6 +261,19 @@ a:focus-visible {
   padding-block: 2.2rem 3.25rem;
 }
 
+.pde-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  margin-top: 1rem;
+}
+
+.pde-resource-note {
+  display: block;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
 .essay-index {
   margin: 0;
   padding-inline-start: 1.25rem;
