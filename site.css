@@ -302,6 +302,28 @@ a:focus-visible {
 
 .essay-references li + li { margin-top: 0.5em; }
 
+.essay .note-back {
+  font-size: 0.875em;
+}
+
+.guide-summary { max-width: 68ch; }
+
+.guide-link {
+  margin-block: 1rem 1.4rem;
+}
+
+.guide-link a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.guide-reader {
+  display: block;
+  width: min(100%, 60rem);
+  height: clamp(25rem, 75vh, 56rem);
+  border: 1px solid var(--line);
+}
+
 @media (max-width: 52rem) {
   .masthead-inner { flex-wrap: wrap; }
   .wordmark { flex-basis: auto; }
@@ -311,6 +333,7 @@ a:focus-visible {
 @media (max-width: 40rem) {
   .masthead-inner { flex-direction: column; align-items: flex-start; }
   .site-nav { font-size: 0.94rem; }
+  .guide-reader { display: none; }
   .home { grid-template-columns: minmax(0, 1fr); row-gap: 2rem; }
   .profile {
     display: grid;
